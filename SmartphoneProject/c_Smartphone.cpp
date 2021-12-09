@@ -80,3 +80,9 @@ void c_Smartphone::setScreenType(const char* screen_type)
 	this->screen_type = new char[strlen(screen_type)+1];
 	strcpy_s(this->screen_type, strlen(screen_type)+1, screen_type);
 }
+
+void c_Smartphone::print()
+{
+	std::cout << this->name << " " << this->model << " " << this->screen_diagonal << " "
+		<< this->screen_type << " " << this->ram << "\n";
+}

@@ -40,5 +40,7 @@ public:
 	inline int getRam()const {
 		return this->ram;
 	}
+
+	void print();
 };
 
